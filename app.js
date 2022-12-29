@@ -27,7 +27,8 @@ const corsOptions ={
     origin:'https://todo-full-stack-app-frontend.vercel.app', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
-    methods:['GET', 'PUT', 'POST']
+    methods:['GET', 'PUT', 'POST'],
+    allowedHeaders:['Content-Type', 'Authorization']
 }
 app.use(cors(corsOptions));
 
