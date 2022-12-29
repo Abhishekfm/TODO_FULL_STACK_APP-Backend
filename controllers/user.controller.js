@@ -74,7 +74,7 @@ exports.logout = async (req, res) => {
         sameSite :'None',
         secure : true
     })
-    res.clearCookie()
+    res.clearCookie("token")
     res.status(200).json({
         success: true,
         message: "Logged Out"
