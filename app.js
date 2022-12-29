@@ -24,7 +24,7 @@ app.use(cookieParser());
 // }))
 const cors = require('cors');
 const corsOptions ={
-    origin:true, 
+    origin:false, 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
     methods:['GET', 'PUT', 'POST'],
