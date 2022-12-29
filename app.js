@@ -24,7 +24,7 @@ app.use(cookieParser());
 // }))
 const cors = require('cors');
 const corsOptions ={
-    origin:false, 
+    origin:['https://todo-full-stack-app-frontend.vercel.app','https://todo-full-stack-app-frontend.vercel.app/login','https://todo-full-stack-app-frontend.vercel.app/signup', 'https://todo-full-stack-app-frontend.vercel.app/home'], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
     methods:['GET', 'PUT', 'POST'],
