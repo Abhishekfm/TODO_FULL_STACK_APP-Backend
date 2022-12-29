@@ -24,11 +24,10 @@ app.use(cookieParser());
 // }))
 const cors = require('cors');
 const corsOptions ={
-    origin:['https://todo-full-stack-app-frontend.vercel.app','https://todo-full-stack-app-frontend.vercel.app/login','https://todo-full-stack-app-frontend.vercel.app/signup', 'https://todo-full-stack-app-frontend.vercel.app/home'], 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200,
-    methods:['GET', 'PUT', 'POST'],
-    allowedHeaders:['Content-Type', 'Authorization']
+    "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 204
 }
 app.use(cors(corsOptions));
 
